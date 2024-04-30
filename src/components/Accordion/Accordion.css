@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&display=swap');
+
+.accordion {
+  width: 100%; 
+  background-color: #fff;
+  font-family: 'AR One Sans', sans-serif;
+}
+
+.accordion-trigger {
+  cursor: pointer;
+
+ 
+  transition: background-color 100s;
+}
+
+.accordion-trigger:hover {
+  background-color: #ccc;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.child-element {
+
+  display: none; 
+}
+
+.accordion-trigger:hover + .child-element {
+  display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .accordion {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

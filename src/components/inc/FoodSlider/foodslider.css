@@ -1,0 +1,42 @@
+.slider {
+	@apply h-[450px] m-auto relative w-[100%] grid place-items-center overflow-hidden;
+}
+.slider-track {
+	@apply flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 5));
+	}
+}
+.slide {
+	@apply h-[200px] w-[250px]  items-center p-3;
+}
+/* img {
+	width: 100%;
+} */
+.__card1 {
+	background: #fdb0ca;
+	height: 25rem;
+}
+.__card2 {
+	background: #aeddfe;
+	height: 25rem;
+}
+.__card3 {
+	background: #fce3b0;
+	height: 25rem;
+}
+.__card4 {
+	background: #ab9bfd;
+	height: 25rem;
+}
+.__card5 {
+	background: #bcfc9c;
+	height: 25rem;
+}

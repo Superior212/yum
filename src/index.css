@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Young Serif", serif;
+}
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.nav__Links {
+  margin: 0 1rem;
+  @apply md:text-black text-white;
+
+  font-weight: bolder;
+}
+.__nav_button {
+  @apply p-2 rounded-full w-[9rem];
+  background: #fe9801;
+}
+.__hero_background {
+  background: #00674b;
+  height: 90vh;
+}
+.__navbar_content {
+  /* border-radius: 0px, 0px, 80px, 80px; */
+  background: #f5e6bd;
+  @apply hidden mx-auto p-2 md:flex items-center justify-between py-4 px-[3rem] w-[78rem];
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.__navbar_sm_content {
+  @apply md:hidden flex items-center justify-between mx-auto p-2 py-4 relative bg-[#f5e6bd];
+}
+.__main_wavy {
+  background-color: #fe9801;
+  height: 20vh;
+}
+.__wavyline {
+  background: url(../src/component/asserts/Vector\ 1.png);
+  @apply md:h-[45vh] h-[40vh];
+}
+.__download_btn1 {
+  @apply p-[0.9rem] rounded-full w-[16rem] mx-[3rem] md:mx-3 mb-2 md:mb-0;
+  background: #00674b;
+}
+.__download_btn2 {
+  @apply p-[0.9rem] rounded-full w-[16rem] bg-[#EFFFFB] border-[#00674B] border-2  mx-[3rem] md:mx-0;
+  color: #00674b;
+}
+.__line {
+  border-top: 1px solid #c20143;
+  width: 3%;
+  display: inline-block;
+  margin: 0 3px;
+}
+@font-face {
+  font-family: Young Serif;
+  src: url(../public/YoungSerif-Regular.ttf);
+}
+.__young_serif {
+  font-family: Young Serif;
+}
+@font-face {
+  font-family: AR One Sans;
+  src: url(../public/AROneSans-Regular.ttf);
+}
+.__ar_one_sans {
+  font-family: AR One Sans;
+}
+.__earn_bg {
+  @apply bg-[#FE9801] md:h-[90vh];
+}
+.__tab-btn {
+  @apply w-[10rem] rounded-full;
+}
+.__rider_btn {
+  @apply bg-[#00674B] w-[12rem] p-2 rounded-full text-white font-bold mt-4;
+}
+.__vendor_btn {
+  @apply bg-[#00674B] w-[12rem] p-2 rounded-full text-white font-bold mt-4;
+}
+
+.custom-clip-path {
+	clip-path: polygon(100% 0, 100% 65%, 0 88%, 0 0);
+}
+
+/* custom-clip-path.css */
+
+.rotated-clip-path {
+	clip-path: polygon(100% 0, 100% 100%, 0 98%, 0 30%);
+  }
+  
